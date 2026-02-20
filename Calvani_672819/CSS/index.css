@@ -1,0 +1,127 @@
+@import url("./Default.css");
+
+
+.correct, .error {
+    position: absolute;
+    top: 1rem;
+    
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: #000;
+    color: inherit;
+    font-family: 'VT323';
+    font-size: 20px;
+    opacity: 0; /* nascosto */
+    transition: opacity 0.45s ease;
+    z-index: 100;
+    pointer-events: none;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    max-width: calc(100% - 4rem);     /* evita overflow a destra/sinistra */
+    will-change: opacity;
+    backface-visibility: hidden;
+    
+    outline: 1px solid transparent;   /* rimuove eventuali linee di subpixel */
+
+}
+
+/* stato visibile (solo fade-in) */
+.correct.show, .error.show {
+    opacity: 1;
+}
+
+/* colori specifici */
+.correct { border-color: green; color: green; }
+.error   { border-color: red;   color: red; }
+
+
+.not_set{
+    border: none;
+}
+
+/*campo del form login/registrazone non attivo*/   
+.disattivato{
+    background-color: rgb(12, 15, 16);
+    
+}
+
+form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    
+}
+label{
+    white-space: pre-line;
+    line-height: 1.2;
+}
+
+#ConfermaPasswordInput{
+    margin-left: 0.5rem;
+}
+
+form button{
+    
+    margin-top: 4rem;
+}
+
+.fade {
+  opacity: 0;
+  transition: opacity 0.45s ease;
+}
+
+#Registrazione, #Login{
+    position:absolute;
+    top:0rem;
+    left:50%;
+    height:10%;
+    width:50%;
+    z-index:11;
+    border-top-right-radius:5px;
+    border-top-left-radius:0px;
+}
+
+#Login{
+    left: 0rem;
+}
+
+p{
+    color: white;
+    text-align: center;
+}
+
+#PrimaRiga, #SecondaRiga{
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#DivBottoni{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#TerzaRiga{
+    display: flex;
+    width: 95%;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 48px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#TerzaRiga select{
+    height: 1.5rem;
+    max-width: 10rem;
+    font-family: 'VT323';
+}

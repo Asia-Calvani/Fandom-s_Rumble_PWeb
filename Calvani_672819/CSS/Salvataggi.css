@@ -1,0 +1,159 @@
+@import url("./Default.css");
+
+button{
+    width: 20rem;
+    height: 6rem;
+    margin: 3px;
+    background-color: var(--secondario);
+    font-family: 'VT323';
+    border: 2px solid rgb(207, 17, 84);
+    color: rgb(109, 1, 39);
+    font-size: 18px;
+}
+
+button:hover{
+    background-color: var(--base);
+    border: 2px solid rgb(0, 141, 141);
+    color: rgb(0, 95, 95);
+    font-size: 18px;
+    transform: scale(1.05);
+}
+
+/*#overlayForm{
+    display: grid;
+    grid-template-areas: "Ti P"
+                         "Form P";
+    grid-template-columns:50% 50%;
+}*/
+
+#FormPg{
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+label{
+    font-family: 'VT323';
+    font-size: 18px;
+    width: 8rem ;
+    color: var(--base);
+    
+    line-height: 1;
+}
+
+input{
+    margin-top: 1rem;
+    height: 1rem;
+    width: 6rem;
+    font-size: 18px;
+    font-family: 'VT323';
+    color: white;
+    background-color: rgb(22, 28, 29) ;
+    border: none;
+    
+}
+
+#NomePgInput{
+    border-bottom: 1px solid white;
+    
+}
+
+select{
+    font-size: 18px;
+    font-family: 'VT323';
+    color: white;
+    background-color: rgb(22, 28, 29) ;
+    border: none;
+}
+/*A seguire tutti i campi del form che fanno parte di questa griglia*/
+.DivDelForm{
+    display: flex;
+    align-items: center;
+
+    gap: 0.5rem;
+    margin: 0.5rem 0 0 0.5rem;
+    padding: 0;
+    width: 98%;
+}
+.DivDelForm label{
+    width: 8rem;
+    text-align: left;
+    margin: 0;
+}
+.DivDelForm input{
+    margin: 0;
+    flex: 1 1 auto;
+    height: 1.5rem;
+    max-width: 10rem;
+}
+
+.bottoneForm{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    width: 10rem;
+    height: 3rem;
+    font-size: 16px;
+
+
+}
+
+p{
+    color: white;
+}
+
+h2,h3{
+    font-family: 'VT323';
+    color: var(--base);}
+
+#AnimaPg{
+    position: absolute;
+    left: 70%;
+    top: -5%;
+    transform: scale(0.1);
+}
+
+
+
+#PreviewPg{
+    width: 50%;
+    border-left: 1px solid white;
+}
+
+#NomeVitaDiv, #SoloVita{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+#SoloVita{
+
+    gap: 0.2rem;
+
+    justify-content: left;
+}
+
+#FormSalvataggi{
+    display: flex;
+    flex-direction: column;
+}
+/*@media (max-width: 600px) {
+    .DivDelForm{
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.25rem;
+    }
+    .DivDelForm label{
+        width: auto;
+        text-align: left;
+    }
+    .DivDelForm input{
+        width: 100%;
+        max-width: none;
+    }
+}

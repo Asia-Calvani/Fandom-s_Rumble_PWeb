@@ -1,0 +1,23 @@
+@import url("./Default.css");
+
+h1{
+    font-size: large;
+    margin-bottom: 1.5rem;
+}
+
+h2{
+    font-size: medium;
+    margin-bottom: 1rem;
+}
+p{
+    font-size: small;
+    color: white;
+    font-family: "VT323";
+    margin: 0.2rem 0rem;
+}
+.paragrafo{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+
+}

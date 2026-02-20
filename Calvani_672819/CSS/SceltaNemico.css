@@ -1,0 +1,146 @@
+@import url("./Default.css");
+
+#ContentoreNemici {
+    border: 2px solid var(--secondario);
+    width: 95%;
+    height: 100%;
+    
+
+
+}
+h2{
+    display: inline-block;
+    font-family:'Press Start 2P';
+    color: white;
+    margin-top: 1.5rem;
+    vertical-align: middle;
+    width: 50%;
+    text-align: center;
+    font-size: medium;
+    margin-bottom: 0rem;
+}
+#Title{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+#game_zone{
+    padding-top: 0rem;
+    padding-bottom: 2rem;
+}
+#Cat_back, #Cat_next, #page_back, #page_next {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    vertical-align: middle;
+    flex: 0 0 auto; 
+}
+
+#categorie, #pagine {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#pagine{
+    margin-top: 1rem;
+    height: 80%;
+    align-items: center;
+}
+
+#GrigliaNemici{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    padding-left: 2.5rem;
+    padding-top: 2rem;
+    align-items: flex-start;
+    align-content: flex-start;
+    border: 1px solid var(--secondario);
+    vertical-align: middle;
+
+}
+
+#account{
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* centra verticalmente gli elementi */
+    gap: 0.5rem 2rem;
+    width: 100%;
+    justify-content: flex-end;
+    padding-top: 0rem;
+}
+
+button{
+    margin-top: 5px;
+}
+
+.info{
+    width: 1.5rem;
+    height: 1.5rem;
+    vertical-align: middle;
+}
+#infoPg {
+    border: solid 1px white;
+    display: flex;
+    flex-direction: row;
+    padding: 2px 6px;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: -2px;    
+    box-sizing: border-box;
+    background: transparent;
+    height: auto;
+}
+
+#Cat_back:hover, #Cat_next:hover, #page_back:hover, #page_next:hover {
+    transition: transform 0.2s;
+    transform: scale(1.1);
+}
+.CardNemico{
+    border: 1px solid var(--base);
+    margin: 0.5rem;
+    width: 7rem;
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+}
+
+.freccia-disabilitata {
+    pointer-events: none;   /* blocca click + hover */
+    opacity: 0.3;           /* effetto disabilitato */
+    filter: grayscale(100%);
+}
+
+p+p{
+    margin: 0rem;
+}
+#infoPg>p{
+    margin-bottom: 0rem;
+    margin: 0;
+    line-height: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info{
+    width: 1.5rem;
+    height: 1.5rem;
+    vertical-align: middle;
+}
+.disabilitato{
+    pointer-events: none;
+    opacity: 0.5;
+}
+.selezionato{
+    border: 1px solid var(--secondario);
+}

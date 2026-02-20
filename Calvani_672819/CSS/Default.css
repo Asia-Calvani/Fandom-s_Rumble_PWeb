@@ -1,0 +1,192 @@
+/*font family da usare, prese da google fonts*/
+/*per i totoli*/
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen&display=swap'); 
+/*per le scritte*/
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen&family=VT323&display=swap'); 
+
+/*colori principali usati*/
+:root{
+    --base: aqua;
+    --secondario:#EE2E94;
+}
+
+html{
+    margin: 0%;
+    padding: 0%;
+    height: 100vh;
+    width: 100vw;
+}
+body{
+    background-color: black;
+
+    background-repeat: no-repeat;
+    background-size:cover;
+    justify-content: center;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    height: 100%;
+    
+}
+
+#game_zone{
+    position:relative;
+    z-index: 2;
+    box-sizing: border-box;
+    border: 2px white solid;
+    width: 64%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(0,0,0);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#account{
+    position:absolute;
+    top:0rem;
+    right: 0.5rem;
+    color: white;
+}
+
+#acc_name:hover{
+    text-decoration: underline;
+}
+
+#CtrMus{
+    position: absolute;
+    width: 3rem;
+    bottom: 0rem;
+    left:0rem;
+}
+
+p{
+    font-family: 'VT323';
+}
+
+/* overlay per il carosello (fade-in/out su sfondo nero) */
+#bg_overlay{
+    position: fixed;
+    inset: 0; /* top:0; right:0; bottom:0; left:0; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0;
+
+}
+
+button{
+    width: 10rem;
+    height: 3rem;
+    margin: 3px;
+    background-color: var(--secondario);
+    font-family: 'VT323';
+    border: 2px solid rgb(207, 17, 84);
+    color: rgb(109, 1, 39);
+    font-size: 18px;
+}
+
+.no_salvataggi{
+    cursor: not-allowed;
+    background-color: #7a184c;
+    border: 2px solid rgb(94, 7, 38);
+    color: rgb(46, 1, 17);
+}
+.no_salvataggi:hover{
+    transform: none;
+    background-color: #7a184c;
+    border: 2px solid rgb(94, 7, 38);
+    color: rgb(46, 1, 17);
+}
+
+button:hover{
+    background-color: var(--base);
+    border: 2px solid rgb(0, 141, 141);
+    color: rgb(0, 95, 95);
+    font-size: 18px;
+    transform: scale(1.05);
+}
+
+#Title,h1,h2{
+    color: var(--base);
+    font-size: 37px;
+    font-family:'Press Start 2P';
+    margin-bottom: 3rem;
+}
+
+input{
+    margin-top: 3rem;
+    margin-left: 1rem;
+    height: 2rem;
+    width: 12rem;
+    font-size: 18px;
+    font-family: 'VT323';
+}
+
+label{
+    font-family: 'VT323';
+    font-size: 20px;
+    width:auto;
+    color: var(--base);
+
+}
+
+#FormLogEReg{
+    position: absolute;
+    top: 15%;
+    height: 85%;
+    width: 100%;
+}
+
+#menu_logout{
+    position: absolute;
+    background-color:rgb(22, 28, 29);
+    border: 2px solid var(--base);
+    border-radius: 5px;
+    text-align: center;
+    flex-direction: column;
+    width: 8rem;
+}
+#menu_logout p:hover{
+    text-decoration: underline;
+}
+
+hr{
+    border: 1px solid white;
+    width: 80%;
+}
+.no_valid{
+    cursor: not-allowed;
+    background-color: #7a184c;
+    border: 2px solid rgb(94, 7, 38);
+    color: rgb(46, 1, 17);
+}
+.no_valid:hover{
+    transform: none;
+    background-color: #7a184c;
+    border: 2px solid rgb(94, 7, 38);
+    color: rgb(46, 1, 17);
+}
+
+@keyframes sfondo_passaggio {
+    0%   { opacity: 0; }
+    15%  { opacity: 1; }
+    85%  { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Rimuove il bordo/focus nativo che alcuni browser mostrano sul canvas */
+canvas, #game {
+    outline: none;
+    border: none;
+}
+canvas:focus, #game:focus {
+    outline: none;
+    box-shadow: none;
+}

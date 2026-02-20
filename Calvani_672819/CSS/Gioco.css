@@ -1,0 +1,85 @@
+@import url("./Default.css");
+canvas{
+
+    display: block;
+    z-index: 2;
+    
+}
+
+#RecapDatiAvv{
+    position: absolute;
+    top: 0rem;
+    left: 0.5rem;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    gap:1rem;
+}
+
+#bottoniBattaglia{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottoneBattaglia{
+    background-color: black;
+    width: 23%;    
+    border-color: var(--secondario);
+    color:var(--secondario);
+}
+.bottoneBattaglia:hover{
+    background-color: black;   
+    border-color: var(--base);
+    color:var(--base);
+}
+#infoPg{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    width: 55%;
+    gap:1rem;
+}
+
+#infoPg>p{
+    margin: 0.5rem 0rem;
+}
+
+#barraVitaPg{
+    display: inline;
+    width: 10rem;
+    height: 1rem;
+    margin-top: 0.5rem;
+    background-color: #039595;
+}
+#riempimentoBarraPg{
+    background-color: #00ffff;
+    width: 100%;
+    height: 100%;
+}
+.turno-nemico{
+    border-color: gray;
+    color:gray
+}
+.turno-nemico:hover{
+    border-color: gray;
+    color:gray;
+    background-color: black;
+    transform: none;
+}
+h1{
+    text-align: center;
+    color: var(--base);
+    font-family: 'Press Start 2P';
+}
+#ContenitoreForm{
+    align-items: center;
+    justify-content: center;
+}
+#MessaggioFine{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
